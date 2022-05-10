@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    font-size: 2vw;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(245, 239, 232);
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.728), rgba(241, 231, 220, 0.709)), url(https://images.unsplash.com/photo-1615705592748-029c989e6d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
+    /* background-image: url(https://images.unsplash.com/photo-1615705592748-029c989e6d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+
+h1 {
+    font-size: 10vw;
+
+    margin-bottom: 2vh;
+
+}
+
+h2 {
+    font-size: 8vw;
+    text-align: center;
+}
+
+h3 {
+    font-size: 7vw;
+}
+
+p {
+    font-size: 5vw;
+}
+
+
+
+.iconfeatures p {
+    font-size: 5vw;
+    padding: 5vw 0;
+    margin-top: 0;
+    margin-bottom: 10vw;
+    grid-area: 'feature';
+}
+
+.iconfeatures img {
+    grid-area: 'icon';
+    width: 100%;
+    height: auto;
+    max-width: 15vw;
+    margin: 0 auto;
+    justify-self: center;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    border: 1px solid rgba(0, 0, 0, 0.917);
+    box-shadow: 2px 2px 5px rgba(99, 96, 96, 0.917);
+    color: black;
+    background-color: rgb(229, 176, 127);
+}
+
+button:hover {
+    background-color: rgb(217, 147, 82);
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+
+    position: fixed;
+    width: 100%;
+}
+
+header .logo {
+    margin: 0;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 239, 232);
+
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 90vw;
+}
+
+
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    padding: 5px 50px;
+}
+
+#nav-bar {
+    display: flex;
+    font-size: 4vw;
+
+    line-height: 150%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#hero {
+    padding-top: 40vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150vw;
+    /* background-image: url(https://images.unsplash.com/photo-1513890333407-6f85205e8ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.728), rgba(255, 255, 255, 0.728)), url(https://images.unsplash.com/photo-1615705592748-029c989e6d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+}
+
+
+
+#features .container {
+    margin-top: 10vw;
+    text-align: center;
+    padding: 10px 20px;
+
+    display: grid;
+    justify-items: center;
+
+    grid-row: 10vw;
+
+}
+
+
+
+
+
+@media (min-width: 500px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+
+
+    #features .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-areas:
+            "icon icon"
+            "feature feature"
+            "icon icon"
+            "feature feature"
+        ;
+    }
+
+
+
+    .iconfeatures p {
+        font-size: 4vw;
+        padding: 5vw;
+        margin-top: 0;
+        margin-bottom: 10vw;
+        grid-area: 'feature';
+    }
+
+    .iconfeatures img {
+        grid-area: 'icon';
+        width: 100%;
+        height: auto;
+        max-width: 15vw;
+        margin: 0 auto;
+        justify-self: center;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header .container {
+    position: fixed;
+
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    margin: 0px;
+    justify-content: space-around;
+
+}
+
+
+@media (max-width:1000px) {
+
+    body {
+        font-size: 1vw;
+    }
+
+}
+
+#client-data {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section {
+    display: flex;
+}
+
+#main-container {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    max-width: 5vw;
+    display: flex;
+}
+
+#nav-var {
+    display: flex;
+    flex-direction: row;
+} */
