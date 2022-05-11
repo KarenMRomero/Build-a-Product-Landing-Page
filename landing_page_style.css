@@ -3,11 +3,20 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background-color: rgb(245, 239, 232);
+    /* background-color: rgb(245, 239, 232); */
+
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.728), rgba(255, 255, 255, 0.728)), url(https://images.unsplash.com/photo-1615705592748-029c989e6d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 
@@ -24,22 +33,26 @@ h2 {
 }
 
 h3 {
-    font-size: 7vw;
+    font-size: 5vw;
 }
 
 p {
     font-size: 5vw;
 }
 
-#tutorial {
+#video {
 
     width: 100%;
-    min-height: 60vw;
-    max-width: 800px;
+    min-height: 70vw;
+    height: 50%;
     max-height: 800px;
     padding: 5% 0;
 }
 
+#features h2 {
+    background-color: rgb(245, 239, 232);
+    padding: 10vw 0;
+}
 
 .iconfeatures p {
     font-size: 5vw;
@@ -97,14 +110,15 @@ button:hover {
 }
 
 header {
-
     position: fixed;
     width: 100%;
+
 }
+
 
 header .logo {
     margin: 0;
-    font-size: 7vw;
+    font-size: 3vw;
     font-weight: bold;
 }
 
@@ -114,8 +128,21 @@ header .container {
     align-items: center;
     background-color: rgb(245, 239, 232);
 
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    padding: 5px 50px;
+    font-weight: bold;
 
 }
+
+header a:hover {
+    color: orange;
+}
+
 
 #nav-bar {
     display: flex;
@@ -125,20 +152,10 @@ header .container {
     flex-direction: column;
     text-align: center;
 
+
 }
 
 
-header a {
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-    padding: 5px 50px;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: orange;
-}
 
 
 img {
@@ -147,8 +164,12 @@ img {
 }
 
 
-footer {
+footer p {
+
+    margin-top: 20vw;
+    margin-bottom: 0;
     text-align: center;
+    background-color: rgb(238, 225, 212);
 }
 
 
@@ -160,10 +181,19 @@ footer {
 #how-we-made-it .container,
 #client-data .container {
 
-
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.728), rgba(255, 255, 255, 0.728)), url(https://images.unsplash.com/photo-1615705592748-029c989e6d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-size: cover;
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.728), rgba(255, 255, 255, 0.728)), url(https://images.unsplash.com/photo-1615705592748-029c989e6d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover; */
 }
+
+
+#features .container,
+#pricing .container {
+    rgb(245, 239, 232);
+    background-color: rgb(245, 239, 232);
+
+
+}
+
 
 
 #hero {
@@ -177,17 +207,65 @@ footer {
 }
 
 #how-we-made-it .container,
-#client-data .container {
+#client-data .container,
+#pricing .container {
     text-align: center;
     padding: 5% 0;
     display: flex;
     flex-direction: column;
 }
 
+#pricing .container {
+    margin: 20vw 0;
+}
+
+#pricing .container p {
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 60vw;
+    border-radius: 1em;
+    width: 80vw;
+    height: 70vw;
+    margin: 7vw auto;
+}
+
+.card:hover {
+
+    border: 2px solid orange;
+}
+
+.card button {
+    margin: 0 2vw 0 0;
+    align-self: flex-end;
+    box-shadow: none;
+}
+
+.card:first-child {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://images.unsplash.com/photo-1615486363973-f79d875780cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
+
+}
+
+.card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://images.unsplash.com/photo-1615486364134-62a4c72c822d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+
+}
+
+.card:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://images.unsplash.com/photo-1619234711431-644a9d28d6ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80);
+
+}
+
+
+
 
 
 #features .container {
-    margin-top: 10vw;
+    margin-top: 0vw;
     text-align: center;
     padding: 10px 20px;
 
@@ -195,6 +273,11 @@ footer {
     justify-items: center;
 
     grid-row: 10vw;
+
+}
+
+#features {
+    margin-top: 20vw;
 
 }
 
@@ -239,5 +322,87 @@ footer {
         max-width: 15vw;
         margin: 0 auto;
         justify-self: center;
+    }
+}
+
+
+
+@media (max-height: 800px) {
+
+
+    header {
+        position: static;
+    }
+
+
+    h1 {
+        margin-top: 0;
+        font-size: 8vw;
+        margin-bottom: 2vh;
+    }
+
+
+    h2 {
+        font-size: 6vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    #pricing .container {
+        margin: 10vw 0;
+    }
+
+
+    .iconfeatures p {
+        font-size: 3vw;
+        padding: 5vw;
+        margin-top: 0;
+        margin-bottom: 10vw;
+        grid-area: 'feature';
+    }
+
+
+
+    #hero .container {
+        padding-top: 0vw;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    #hero {
+        padding-top: 0;
+        height: 80vw;
+    }
+
+    #video {
+
+        width: 100%;
+        min-height: 60vw;
+        margin: 0 auto;
+        height: 50%;
+    }
+
+    .card {
+        width: 60vw;
+        height: 50vw;
+        margin: 7vw auto;
+    }
+
+    footer p {
+
+        font-size: 5vw;
+    }
+
+
+    .card button {
+        font-size: 2.5vw;
     }
 }
